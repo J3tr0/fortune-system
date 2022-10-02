@@ -10,14 +10,14 @@
 			"flags": {}
 		}
 	],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"compatibility": {
 		"minimum": "10",
-		"verified": "10.285"
+		"verified": "10.286"
 	},
 	"url": "https://github.com/J3tr0/fortune-system",
-	"manifest": "https://github.com/J3tr0/fortune-system/releases/download/1.0.0/module.json",
-	"download": "https://github.com/J3tr0/fortune-system/releases/download/1.0.0/module.zip",
+	"manifest": "https://github.com/J3tr0/fortune-system/releases/download/1.0.1/module.json",
+	"download": "https://github.com/J3tr0/fortune-system/releases/download/1.0.1/module.zip",
 	"languages": [
 		{
 			"lang": "en",
