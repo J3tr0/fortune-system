@@ -1,0 +1,35 @@
+{
+	"id": "fortune-system",
+	"name": "fortune-system",
+	"title": "Fortune System Roller",
+	"description": "A module for the Fortune System dice rolling.",
+	"authors": [
+		{
+			"name": "Jetro",
+			"discord": "Jetro#2146",
+			"flags": {}
+		}
+	],
+	"version": "1.0.0",
+	"compatibility": {
+		"minimum": "10",
+		"verified": "10.285"
+	},
+	"url": "https://github.com/J3tr0/fortune-system",
+	"manifest": "https://github.com/J3tr0/fortune-system/releases/download/1.0.0/module.json",
+	"download": "https://github.com/J3tr0/fortune-system/releases/download/1.0.0/module.zip",
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		},
+		{
+			"lang": "it",
+			"name": "Italiano",
+			"path": "lang/it.json"
+		}
+	],
+	"styles": ["styles/style.css"],
+	"esmodules": ["scripts/main.js"]
+}

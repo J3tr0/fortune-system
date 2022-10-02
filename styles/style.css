@@ -1,0 +1,164 @@
+/* CHAT */
+.chat-message.message {
+	background-size: cover;
+}
+.chat-message.message .message-header h4 {
+	font-size: 14px;
+}
+.chat-message.message .chat-label {
+	font-size: 12px;
+	margin-top: 0.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-bottom: 1px solid #000;
+}
+.chat-message.message .chat-label.label-stripe {
+	padding: 0.2rem;
+	border: none;
+	margin-top: 0;
+	text-transform: none;
+	font-size: 14px;
+}
+.chat-message.message .successes-box h2 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-top: 0.8rem;
+}
+.chat-message.message .successes-box h2.failure {
+	color: #ed4337;
+}
+.chat-message.message .successes-list {
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
+}
+.chat-message.message .successes-list li.success {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2px;
+	border-bottom: 1px solid;
+	padding-bottom: 2px;
+}
+.chat-message.message .successes-list li.success:last-child {
+	margin-bottom: 0;
+}
+.chat-message.message .successes-list span.success {
+	padding: 0;
+	width: 18px;
+	height: 18px;
+	display: block;
+	line-height: 18px;
+	text-align: center;
+	font-weight: 600;
+}
+.chat-message.message button {
+	margin-bottom: 2px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.brokencompass .chat-message.message {
+	background-image: url('../images/bc-bg.png');
+	background-color: #e8e4d8;
+}
+.brokencompass .chat-label.label-stripe,
+.brokencompass .successes-list span.success {
+	background-color: rgba(234, 147, 19, 0.6);
+	color: #000;
+}
+.brokencompass .successes-list li.success {
+	border-bottom-color: rgba(234, 147, 19, 0.6) !important;
+}
+.brokencompass .successes-box h2 {
+	border-bottom-color: rgba(234, 147, 19, 1);
+}
+.brokencompass .chat-message.message button {
+	border-color: rgba(234, 147, 19, 1);
+}
+
+.household .chat-message.message {
+	background-image: url('../images/hh-bg.png');
+	background-color: #736478;
+	color: #f9f9f9;
+}
+.household .chat-message.message .message-header h4,
+.household .chat-message.message .message-metadata {
+	color: #f9f9f9;
+}
+.household .chat-label.label-stripe,
+.household .successes-list span.success {
+	background-color: rgba(196, 141, 247, 0.6);
+	color: #2b0458;
+}
+.household .successes-list li.success {
+	border-bottom-color: rgba(196, 141, 247, 0.6) !important;
+}
+.household .successes-box h2 {
+	border-bottom-color: rgba(196, 141, 247, 1);
+}
+.household .chat-message.message button {
+	border-color: rgba(196, 141, 247, 1);
+}
+.chat-message.message .successes-box h2.failure {
+	color: #2b0458;
+}
+
+/* DICE */
+.dice-tooltip .dice-rolls .roll {
+	color: transparent;
+	width: 28px;
+	height: 28px;
+	background-size: 28px 28px;
+}
+.dice-tooltip .dice-rolls .roll.fitdd2 {
+	color: transparent;
+	width: 112px;
+	height: 112px;
+	background-size: 112px 112px;
+}
+
+.household.dice-tooltip .dice-rolls .roll.die-1 {
+	background-image: url('../icons/household/1.webp');
+}
+.household.dice-tooltip .dice-rolls .roll.die-2 {
+	background-image: url('../icons/household/2.webp');
+}
+.household.dice-tooltip .dice-rolls .roll.die-3 {
+	background-image: url('../icons/household/3.webp');
+}
+.household.dice-tooltip .dice-rolls .roll.die-4 {
+	background-image: url('../icons/household/4.webp');
+}
+.household.dice-tooltip .dice-rolls .roll.die-5 {
+	background-image: url('../icons/household/5.webp');
+}
+.household.dice-tooltip .dice-rolls .roll.die-6 {
+	background-image: url('../icons/household/6.webp');
+}
+
+.broken-compass.dice-tooltip .dice-rolls .roll.die-1 {
+	background-image: url('../icons/broken-compass/1.webp');
+}
+.broken-compass.dice-tooltip .dice-rolls .roll.die-2 {
+	background-image: url('../icons/broken-compass/2.webp');
+}
+.broken-compass.dice-tooltip .dice-rolls .roll.die-3 {
+	background-image: url('../icons/broken-compass/3.webp');
+}
+.broken-compass.dice-tooltip .dice-rolls .roll.die-4 {
+	background-image: url('../icons/broken-compass/4.webp');
+}
+.broken-compass.dice-tooltip .dice-rolls .roll.die-5 {
+	background-image: url('../icons/broken-compass/5.webp');
+}
+.broken-compass.dice-tooltip .dice-rolls .roll.die-6 {
+	background-image: url('../icons/broken-compass/6.webp');
+}
+
+.broken-compass.dice-tooltip .dice-rolls .roll.fitdd2.die-1 {
+	background-image: url('../icons/broken-compass/testa.png');
+}
+.broken-compass.dice-tooltip .dice-rolls .roll.fitdd2.die-2 {
+	background-image: url('../icons/broken-compass/croce.png');
+}

@@ -1,0 +1,54 @@
+<div data-user="{{this.user}}" class="dice-tooltip fs-die-tooltip {{this.rulesetName}}">
+	{{#if this.purpose}}
+		<div class="chat-label label-stripe">{{this.purpose}}</div>
+	{{/if}}
+	
+	{{#if this.pairsDice.length}}
+		<div class="pairs-dice-box">
+			<div class="chat-label">{{localize "FSRoller.ChatEqualDice"}}</div>
+			<ol class="dice-rolls">
+				{{#each this.pairsDice as |roll|}}
+					<li class="roll die fitdd6 die-{{roll}}">{{roll}}</li>
+				{{/each}}
+			</ol>
+		</div>
+		
+	{{/if}}
+
+	{{#if this.spareDice.length}}
+		<div class="spare-dice-box">
+			<div class="chat-label">{{localize "FSRoller.ChatSpareDice"}}</div>
+			<ol class="dice-rolls">
+				{{#each this.spareDice as |roll|}}
+					<li class="roll die fitdd6 die-{{roll}}">{{roll}}</li>
+				{{/each}}
+			</ol>
+		</div>		
+	{{/if}}
+
+	{{#if this.hasSuccesses}}
+		<div class="successes-box">
+			<h2>{{localize "FSRoller.ChatSuccessesTitle"}}</h2>
+			<ol class="successes-list">
+				<li class="success">{{localize "FSRoller.SuccessesBasic"}} <span class="success">{{this.successes.basic}}</span></li>
+				<li class="success">{{localize "FSRoller.SuccessesCritical"}} <span class="success">{{this.successes.critical}}</span></li>
+				<li class="success">{{localize "FSRoller.SuccessesExtreme"}} <span class="success">{{this.successes.extreme}}</span></li>
+				<li class="success">{{localize "FSRoller.SuccessesImpossible"}} <span class="success">{{this.successes.impossible}}</span></li>
+			</ol>
+		</div>
+	{{else}}
+		<div class="successes-box">
+			<h2 class="failure">{{localize "FSRoller.ChatFailureTitle"}}</h2>			
+		</div>
+	{{/if}}
+
+	{{#if this.useExpertise}}
+		<button data-action="reroll" data-purpose="[{{localize "FSRoller.ChatPurposeExpertise"}}] {{this.purpose}}" data-spare="{{this.spareDice.length}}" data-pairs="{{this.pairsDice}}" data-roll-count="{{this.rollCount}}" data-expertise="1">{{localize "FSRoller.ChatHaveExpertise"}}</button>
+	{{/if}}
+	{{#if this.takeARisk}}
+		<button data-action="reroll" data-purpose="[{{localize "FSRoller.ChatPurposeRisk"}}] {{this.purpose}}" data-spare="{{this.spareDice.length}}" data-pairs="{{this.pairsDice}}" data-roll-count="{{this.rollCount}}" data-expertise="0">{{localize "FSRoller.ChatTakeRisk"}}</button>
+	{{/if}}
+	{{#if this.allIn}}
+		<button data-action="reroll" data-purpose="[{{localize "FSRoller.ChatPurposeAllIn"}}] {{this.purpose}}" data-spare="{{this.spareDice.length}}" data-pairs="{{this.pairsDice}}" data-roll-count="{{this.rollCount}}" data-expertise="0">{{localize "FSRoller.ChatAllIn"}}</button>
+	{{/if}}
+</div>

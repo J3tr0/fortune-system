@@ -1,0 +1,15 @@
+<div
+	data-user='{{this.user}}'
+	class='dice-tooltip fs-die-tooltip {{this.rulesetName}}'
+>
+	{{#if this.dice.length}}
+		<div class='pairs-dice-box'>
+			<div class='chat-label'>{{flipResult}}</div>
+			<ol class='dice-rolls'>
+				{{#each this.dice as |roll|}}
+					<li class='roll die fitdd2 die-{{roll}}'>{{roll}}</li>
+				{{/each}}
+			</ol>
+		</div>
+	{{/if}}
+</div>
