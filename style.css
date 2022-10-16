@@ -59,7 +59,7 @@
 }
 
 .brokencompass .chat-message.message {
-	background-image: url('../images/bc-bg.png');
+	background-image: url('./images/bc-bg.png');
 	background-color: #e8e4d8;
 }
 .brokencompass .chat-label.label-stripe,
@@ -78,7 +78,7 @@
 }
 
 .household .chat-message.message {
-	background-image: url('../images/hh-bg.png');
+	background-image: url('./images/hh-bg.png');
 	background-color: #736478;
 	color: #f9f9f9;
 }
@@ -119,46 +119,46 @@
 }
 
 .household.dice-tooltip .dice-rolls .roll.die-1 {
-	background-image: url('../icons/household/1.webp');
+	background-image: url('./icons/household/1.webp');
 }
 .household.dice-tooltip .dice-rolls .roll.die-2 {
-	background-image: url('../icons/household/2.webp');
+	background-image: url('./icons/household/2.webp');
 }
 .household.dice-tooltip .dice-rolls .roll.die-3 {
-	background-image: url('../icons/household/3.webp');
+	background-image: url('./icons/household/3.webp');
 }
 .household.dice-tooltip .dice-rolls .roll.die-4 {
-	background-image: url('../icons/household/4.webp');
+	background-image: url('./icons/household/4.webp');
 }
 .household.dice-tooltip .dice-rolls .roll.die-5 {
-	background-image: url('../icons/household/5.webp');
+	background-image: url('./icons/household/5.webp');
 }
 .household.dice-tooltip .dice-rolls .roll.die-6 {
-	background-image: url('../icons/household/6.webp');
+	background-image: url('./icons/household/6.webp');
 }
 
 .broken-compass.dice-tooltip .dice-rolls .roll.die-1 {
-	background-image: url('../icons/broken-compass/1.webp');
+	background-image: url('./icons/broken-compass/1.webp');
 }
 .broken-compass.dice-tooltip .dice-rolls .roll.die-2 {
-	background-image: url('../icons/broken-compass/2.webp');
+	background-image: url('./icons/broken-compass/2.webp');
 }
 .broken-compass.dice-tooltip .dice-rolls .roll.die-3 {
-	background-image: url('../icons/broken-compass/3.webp');
+	background-image: url('./icons/broken-compass/3.webp');
 }
 .broken-compass.dice-tooltip .dice-rolls .roll.die-4 {
-	background-image: url('../icons/broken-compass/4.webp');
+	background-image: url('./icons/broken-compass/4.webp');
 }
 .broken-compass.dice-tooltip .dice-rolls .roll.die-5 {
-	background-image: url('../icons/broken-compass/5.webp');
+	background-image: url('./icons/broken-compass/5.webp');
 }
 .broken-compass.dice-tooltip .dice-rolls .roll.die-6 {
-	background-image: url('../icons/broken-compass/6.webp');
+	background-image: url('./icons/broken-compass/6.webp');
 }
 
 .broken-compass.dice-tooltip .dice-rolls .roll.fitdd2.die-1 {
-	background-image: url('../icons/broken-compass/testa.png');
+	background-image: url('./icons/broken-compass/testa.png');
 }
 .broken-compass.dice-tooltip .dice-rolls .roll.fitdd2.die-2 {
-	background-image: url('../icons/broken-compass/croce.png');
+	background-image: url('./icons/broken-compass/croce.png');
 }
