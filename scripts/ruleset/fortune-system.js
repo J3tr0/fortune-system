@@ -13,7 +13,6 @@ export default class FortuneSystem {
 
 		// console.log(dice);
 		// console.log(keepPairs);
-		// console.log('expertise: ' + expertise);
 
 		values.forEach((d) => {
 			if (equals[d] >= 2) pairsDice.push(d);
@@ -22,6 +21,12 @@ export default class FortuneSystem {
 
 		pairsDice.sort();
 		spareDice.sort();
+
+		// console.log('expertise: ' + expertise);
+		// console.log(dice.length);
+		// console.log(spareDice.length);
+		// console.log(dice.length > spareDice.length);
+		// console.log(expertise ? true : dice.length > spareDice.length);
 
 		return await {
 			rolls: dice,

@@ -10,10 +10,10 @@
 			"flags": {}
 		}
 	],
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"compatibility": {
 		"minimum": 10,
-		"verified": "10.288"
+		"verified": "10.291"
 	},
 	"url": "https://github.com/J3tr0/fortune-system",
 	"manifest": "https://github.com/J3tr0/fortune-system/releases/latest/download/module.json",

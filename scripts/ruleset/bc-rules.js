@@ -10,10 +10,11 @@ export default class BCRules extends FortuneSystem {
 	async evalResult(result, rollCount, expertise) {
 		this.rollCount = rollCount;
 
+		// console.log('result: ' + result.rolls);
 		// console.log('hasSuccesses: ' + result.hasSuccesses);
 
 		if (this.rollCount === 1 && !result.hasSuccesses && !expertise) {
-			console.log('reduce successes');
+			// console.log('reduce successes');
 			result = this.reduceSuccesses(result);
 		}
 
