@@ -34,7 +34,7 @@ Hooks.once('init', () => {
 		name: game.i18n.localize('FSRoller.RulesetLabel'),
 		hint: game.i18n.localize('FSRoller.RulesetHint'),
 		scope: 'world',
-		config: true,
+		config: false,
 		choices: {
 			brokencompass: 'Broken Compass',
 			household: 'Household',
