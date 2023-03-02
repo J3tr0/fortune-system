@@ -1,3 +1,4 @@
+import { BCCoin, BCDie } from './die.js';
 import Roller from './roller.js';
 const moduleName = 'fortune-system';
 
@@ -41,6 +42,9 @@ Hooks.once('init', () => {
 		default: 'brokencompass',
 		type: String,
 	});
+
+	CONFIG.Dice.terms['c'] = BCDie;
+	CONFIG.Dice.terms['t'] = BCCoin;
 });
 
 Hooks.on('renderChatLog', (app, html) => {
@@ -74,6 +78,62 @@ Hooks.on('renderChatMessage', (app, html, data) => {
 			});
 		}
 	}
+});
+
+Hooks.once('diceSoNiceReady', (dice3d) => {
+	dice3d.addSystem({ id: 'broken-compass', name: 'Broken Compass' }, false);
+	dice3d.addDicePreset(
+		{
+			type: 'dc',
+			labels: [
+				'modules/fortune-system/icons/broken-compass/1.webp',
+				'modules/fortune-system/icons/broken-compass/2.webp',
+				'modules/fortune-system/icons/broken-compass/3.webp',
+				'modules/fortune-system/icons/broken-compass/4.webp',
+				'modules/fortune-system/icons/broken-compass/5.webp',
+				'modules/fortune-system/icons/broken-compass/6.webp',
+			],
+			colorset: 'bc',
+			system: 'broken-compass',
+		},
+		false
+	);
+	dice3d.addDicePreset(
+		{
+			type: 'dt',
+			labels: [
+				'modules/fortune-system/icons/broken-compass/testa.png',
+				'modules/fortune-system/icons/broken-compass/croce.png',
+			],
+			colorset: 'bt',
+			system: 'broken-compass',
+		},
+		false
+	);
+	dice3d.addColorset(
+		{
+			name: 'bc',
+			description: 'Broken Compass',
+			category: 'Colors',
+			foreground: '#000000',
+			background: '#000000',
+			texture: 'none',
+			edge: '#000000',
+		},
+		'no'
+	);
+	dice3d.addColorset(
+		{
+			name: 'bt',
+			description: 'Broken Compass',
+			category: 'Colors',
+			foreground: '#916726',
+			background: '#916726',
+			texture: 'none',
+			edge: '#916726',
+		},
+		'no'
+	);
 });
 
 console.log('FSRoller | Fortune System Dice Roller loaded');

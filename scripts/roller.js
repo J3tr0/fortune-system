@@ -80,7 +80,7 @@ export default class Roller {
 		rollCount = 0,
 		expertise = 0
 	) {
-		const r = new Roll(`${numberOfDice}d6`, {});
+		const r = new Roll(`${numberOfDice}dc`, {});
 		await r.evaluate({ async: true });
 
 		return this.showChatRollMessage(
@@ -99,7 +99,7 @@ export default class Roller {
 		rollCount = 0,
 		expertise = 0
 	) {
-		const r = new Roll(`${numberOfDice}d2`, {});
+		const r = new Roll(`${numberOfDice}dt`, {});
 		await r.evaluate({ async: true });
 
 		return this.showChatFlipMessage(r);

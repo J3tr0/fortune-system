@@ -10,10 +10,19 @@
 			"flags": {}
 		}
 	],
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"compatibility": {
 		"minimum": 10,
 		"verified": "10.291"
+	},
+	"relationships": {
+		"requires": [
+			{
+				"id": "dice-so-nice",
+				"type": "module",
+				"manifest": "https://gitlab.com/riccisi/foundryvtt-dice-so-nice/-/raw/master/module/module.json"
+			}
+		]
 	},
 	"url": "https://github.com/J3tr0/fortune-system",
 	"manifest": "https://github.com/J3tr0/fortune-system/releases/latest/download/module.json",
